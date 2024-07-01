@@ -7,6 +7,29 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <!-- <ListView Grid.ColumnSpan="3"/> 
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10*"/>
+                <RowDefinition Height="90*"/>
+            </Grid.RowDefinitions>
+            <Menu>
+                <MenuItem Header="Settings"/>
+            </Menu>
+        </Grid> -->
+
+        <Rectangle Grid.Column="0" Fill="LightGray" />
+        <Rectangle Grid.Column="1" Fill="LightSlateGray" />
+        <Rectangle Grid.Column="2" Fill="LightGray" />
+
+        <Grid.ColumnDefinitions>
+            <!-- Switch the active window -->
+            <ColumnDefinition Width="10*"  />
+            <!-- Main interface, for daily tasks this will include the list of tasks -->
+            <ColumnDefinition Width="50*" />
+            <!-- Extended view, elaborates on currently selected task -->
+            <ColumnDefinition Width="20*" />
+        </Grid.ColumnDefinitions>
 
     </Grid>
 </Window>

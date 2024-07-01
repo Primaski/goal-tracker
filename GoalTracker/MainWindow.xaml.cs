@@ -20,9 +20,6 @@ namespace GoalTracker
         public MainWindow()
         {
             InitializeComponent();
-            Console.WriteLine("Hello world!");
-            String x = Console.ReadLine();
-            Console.WriteLine(x);
         }
     }
 }
